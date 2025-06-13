@@ -1,18 +1,22 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "jsx": "react-jsx",
-    "declaration": true,
-    "declarationDir": "dist",
-    "outDir": "dist",
-    "types": ["vitest"]
-  },
-  "include": ["src", "vitest.setup.ts"],
-  "exclude": ["node_modules", "dist"]
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "lib": ["DOM", "ESNext"],
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "jsx": "react-jsx",
+        "declaration": true,
+        "declarationDir": "dist",
+        "outDir": "dist",
+        "types": ["vitest"]
+    },
+    "include": ["src", "vitest.setup.ts"],
+    "exclude": ["node_modules", "dist"]
 }

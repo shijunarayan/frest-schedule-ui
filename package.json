@@ -1,0 +1,11 @@
+{
+  "name": "frest-schedule-ui",
+  "version": "1.0.0",
+  "description": "A reusable React scheduling module for SaaS platforms. Built with Tailwind CSS, shadcn/ui, and TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shiju Narayan",
+  "license": "MIT"
+}

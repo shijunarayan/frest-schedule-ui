@@ -2,10 +2,40 @@
   "name": "frest-schedule-ui",
   "version": "1.0.0",
   "description": "A reusable React scheduling module for SaaS platforms. Built with Tailwind CSS, shadcn/ui, and TypeScript.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "clean": "rm -rf dist"
   },
   "author": "Shiju Narayan",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shijunarayan/frest-schedule-ui.git"
+  },
+  "keywords": [
+    "schedule",
+    "react",
+    "calendar",
+    "saas",
+    "typescript",
+    "tailwind",
+    "shadcn"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "jsdom": "^26.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.3"
+  }
 }
